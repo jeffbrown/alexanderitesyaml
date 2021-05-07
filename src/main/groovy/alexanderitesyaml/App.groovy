@@ -14,7 +14,7 @@ drummer: Peart
 bassist: Lee
 '''
 
-        def multiDoc = new YamlSlurper().parseText(multiDocYaml.replaceAll('---', ''))
+        def multiDoc = new YamlSlurper().parseText(multiDocYaml)
 
         println multiDoc.drummer
         println multiDoc.bassist
